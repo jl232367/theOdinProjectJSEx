@@ -36,7 +36,17 @@ function power(base, power) {
 
 }
 
-function factorial() {
+function factorial(num) {
+	let runTotal = num;
+	if (num === 0) {
+		return 1;
+	} else {
+		for (let i = 1; i <= num - 1; i++) {
+			runTotal = runTotal * i; 
+		}
+		return runTotal;
+	}
+	
 	
 }
 
